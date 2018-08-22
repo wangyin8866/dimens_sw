@@ -6,7 +6,7 @@ import dimens.utils.MakeUtils;
 public class DimenGenerator {
 
     /**
-     * 设计稿尺寸(根据自己设计师的设计稿的宽度填入)
+     * 设计稿尺寸(根据自己设计师的设计稿的宽度填入)px
      */
     private static final int DESIGN_WIDTH = 375;
 
@@ -15,11 +15,13 @@ public class DimenGenerator {
      */
     private static final int DESIGN_HEIGHT = 667;
 
+
+
     public static void main(String[] args) {
 
         DimenTypes[] values = DimenTypes.values();
         for (DimenTypes value : values) {
-            MakeUtils.makeAll(DESIGN_WIDTH, value, "/androidui/adapter");
+            MakeUtils.makeAll(DESIGN_WIDTH, value, "/Users/wyman/IdeaProjects/dimens_sw/src/androidui/adapter");
         }
 
     }
